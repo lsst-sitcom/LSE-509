@@ -333,6 +333,146 @@ The functional grouping and assignment of a coordinator is arranged according to
 Although the intentional separation of subsystems has resulted in a stovepiping of expertise associated with individual components, this arrangement aims to remove that separation of personnel and assembles collections of people to consider how the observatory will function at a systems level.
 The following subsections describe the functional responsibilities of each group and the expected interactions that will occur with people providing assistance from various areas of the project.
 
+\subsection{Main Telescope Calibration and the Auxiliary Telescope Subsystems}
+
+This group consists of two primary areas of focus, however, they are closely related in both required skill sets and personnel.
+The calibration systems for the main telescope will be used throughout the early stages of commissioning to perform electro-optical testing with ComCam and LSSTCam.
+The focus of the group is on the characterization of the illumination system and other hardware systems associated with providing specialized and controlled doses of light to the cameras, and of course the characterization of the optical system(s).
+The performance of these systems is tightly correlated to the ability to measure and correct for systematic error in the on-sky photometry measurements.
+Accomplishing these precise illumination tasks requires numerous individual components to be simultaneously working together such that the input light, once properly aligned to ensure uniform illumination, is properly measured both in intensity and wavelength.
+These types of measurements are demanding on many areas of the control and data reduction systems and therefore commission numerous areas of these systems, albeit via more abstract use-cases.
+In fact, much of the main telescope calibration system functionality is also required by the Auxiliary Telescope system, which is being used as a pathfinder for commissioning the main telescope.
+
+The AuxTel system was designed from early in the project to act as a pathfinder at multiple levels.
+To the extent possible, many of the hardware components are similar or compatible.
+For example, the system uses an LSST sensor and readout electronics. The control software uses exactly the same architecture, including the middleware, even the high-level classes (e.g. the TCS) use base-classes that share common code with the main telescope.
+The data transport and reduction also use the same long-haul network and core pipeline tasks.
+The AuxTel system is also being used to help guide the cultural transition of the project from construction and a focus on daytime task coordination, to one of an operational observatory that operates around-the-clock.
+This includes developing and testing daytime-to-nighttime hand-offs, the identification and assignment of issues encountered during the night that need addressing by the daycrew, and even the general raising of awareness to the daycrew on how their actions during the day can affect nighttime operations.
+
+Because the calibration system and Auxiliary Telescope system interact with numerous areas of the Rubin Observatory, it is expected that this group will interact with essentially all other groups; although interaction with the EPO group will be minimal.
+This group also regularly interacts with on-project teams at Harvard University and IN2P3 in France.
+These teams are working with similar hardware and are pursuing calibration activities that are directly applicable to Rubin science goals.
+Through collaboration with this group the SIT-Com team aims to capitalize on their experiments and expertise to minimize schedule risk and enhance scientific output.
+
+\subsection{Camera Systems}
+All of the observatory subsystems that interface to LSSTCam will be (at least partially) verified by the commissioning camera (ComCam).
+A clear plan for on-sky observing with ComCam leading into science verification should be included in the planning.
+The minimal goal of the ComCam is to functionally verify and validate the performance (at the 1/21 LSSTCam scale) of the delivered observatory hardware and software including data management/data pipelines.
+
+The group spans Camera, T\&S, DM team members as needed.
+ComCam is expected to be the project’s highest priority during the $\sim$3 months of on-sky testing so the team will encompass nearly the whole project.
+The coordination of the group across subsystems should be well exercised and become routine before this critical/limited time.
+Priorities need to be clearly defined between the SIT-Com leadership and the technical team and communication will constantly flow via the project tools (e.g. Slack, Jira, Logging/Reporting) between members.
+
+This effort is to ensure the delivered LSSTCam is well understood.
+Any remaining verification of the LSSTCam especially needs to be understood as part of the pre-ship review (PSR).
+This effort also leads into reverification of the LSSTCam on the summit and its installation and commissioning on the telescope.
+
+\subsection{Science Verification}
+With the observatory assembled, this group will lead the final verification of the system-level science requirements from the OSS and LSR, and any relevant functional tests that remain.
+This team will prioritize on-sky verification and provide feedback into the planned engineering time.
+This team will lead the design of the Science Validation surveys executed during the final phase of commissioning, as well as the scientific characterization of associated data products.
+Emphasis will be placed on characterizing the distribution of delivered scientific performance of the as-built system, including the instrumentation, observatory, and science pipelines.
+This science performance characterization will inform LSST Early Operations.
+This team will also provide initial science validation of the delivered data products and data access services to support the four primary LSST science drivers.
+
+Science Verification and validation is a single-coordinated effort across the Project.
+Prior to first light on sky with ComCam and LSSTCam, this group will work closely with efforts in DM to develop and test tooling for both the automated computation of science performance metrics as well as ad hoc exploration of data quality using precursor datasets (e.g., HSC, DECam) and simulated datasets (e.g., Data Preview Zero).
+The team will develop detailed test specifications and test cases for requirements related to system-level science performance, coordinating with DM verification efforts where overlap exists.
+The team will identify and curate external reference datasets that are needed for science verification and validation.
+The team will become proficient with tools for generating observing scripts and using the scheduler, data access services, as well as image-level, catalog-level, and survey scape visualization tools.
+
+With the start of on-sky observations using ComCam and LSSTCam, the team will be responsible for rapid evaluation of data quality for individual science images to inform commissioning observing campaigns and correlate science performance with telemetry and system configuration.
+Science verification and validation analyses will increase in sophistication throughout the commissioning period, starting with the most algorithm-independent requirements (e.g., throughput and image quality for individual visits), advancing to source detection and astrometric and photometric calibration across ensembles of visits, and progressing to analysis of coadded images and difference image analysis.
+Close coordination and iteration with data processing campaign efforts will be needed to ensure that relevant data products are available for testing.
+Throughout this process, the team will communicate verification status, anomalies, and optimization opportunities to experts on relevant subsystems.
+Finally, this team is responsible for documenting the scientific performance of the on-sky observing campaigns both in the form of reports/verification artifacts to demonstrate construction completeness, as well as publications aimed at the science community.
+
+\subsection{System Software}
+
+The commissioning of system software is challenging as it covers a large number of use-cases, crosses subsystem boundaries, and simultaneously requires using both control and analysis software from the same interface.
+The majority of use-cases are based upon the actions performed during a single night of regular survey operation, which relies upon many individually developed components working together as a system.
+However, regularly overlooked are the functionalities required to commission or characterize the system, which often utilizes features that are not part of the standard operational procedures and which must often be carried out before all subsystems are fully functional.
+An example of such an activity is performing continual read-out of a detector to characterize image motion.
+Another envisioned exercise is the pistoning the entire camera to directly measure the optical aberrations as a function of field position.
+Early identification and testing of these use-cases is critical to ensuring the software can handle these non-typical operational exercises which are necessary for successful integration and characterization of the observatory.
+In addition, carrying out operations during commissioning which were unforeseen when the project was being planned helps ensure that the Rubin system will be flexible and resilient enough to carry out the planned surveys when faced with reality on Cerro Pachón.
+
+The System Software group exists to ensure that all software systems delivered by the subsystems contain the functionalities required by the SIT-Com team to successfully characterize and commission the observatory.
+The System Software group manages this responsibility by deriving a set of milestones and subsequently executing a series of activities to verify their achievement. Each milestone represents the inclusion of new functionality that increases the overall system readiness level and enables new levels of testing and/or characterization to be performed.
+In general, a milestone consists of functionality delivered from all subsystems and includes functionality testing of infrastructure and support systems; examples include the long-haul network and the build and deployment systems.
+Particular attention is paid to the interaction between these systems and how a user interacts with them.
+After completion of the milestone, the new features are expected to be at a reliability level where they are ready for regular daily use.
+Each milestone should have a clearly identified Test Plan (i.e. an LVV in Jira) which will be executed to demonstrate the verification of the requirements associated with the tests.
+
+The System Software Group is led by a single coordinator who coordinates a sub-group, the SIT-Com Software Product Owners, to assist in the generation, scheduling and execution of these integration milestones.
+The use of milestones is intentionally selected as our method to evaluate systems because SIT-Com is scoped to integrate the systems but has no dedicated software resources to develop new software.
+If and when missing functionality is identified, which may or may not have been properly specified in the requirements and appropriately scoped, SIT-Com approaches the subsystem(s) to get it resolved and files change requests requesting contingency when required.
+Identifying these issues as early as possible is the best prevention against time-loss during later commissioning activities.
+Due to the complexity and diverse range of functionality required by the software systems, the Product Owner team has representatives with expertise specific to the integration of a group of deliverables.
+
+\subsubsection{SIT-Com Software Product Owner Team}
+The concept of a product owner (PO) originates from the Scrum/Agile development framework.
+POs act as the primary customers/users of the software being delivered by the subsystems, help guide derive requirements (or user-stories), and act as a consultant during the development phase.
+The SIT-Com product owner (PO) structure follows from what is already in place for the DM and T\&S Software Teams.
+The duties of the current subsystem POs are now steadily reducing as products are being delivered to the Commissioning Team.
+Therefore, selecting SIT-Com POs from the pool of subsystem POs creates a natural evolution of the role and immediately creates an experienced group who have insight and hands-on experience with the already existing systems.
+Viewed from another angle, the SIT-Com PO gatherings are a forum for a select set of subsystem POs to focus on system integration and therefore the integration and commissioning aspects of their subsystem PO responsibilities are now coordinated through SIT-Com.
+
+The main difference between a SIT-Com level PO and a subsystem PO is the attention paid to cross-subsystem functionalities and tooling required to perform commissioning.
+The SIT-Com POs will evaluate subsystem deliverables and validate their functionality through a series of integration milestones (discussed below).
+They will also assess if changes to the requirement(s) are necessary or if the spirit of the original requirement may not have been properly realized.
+The SIT-Com POs work with the subsystem POs and software managers to design and scope the new products if/when they are required.
+Such demands are expected to occur based on early testing that will undoubtedly reveal issues that require further characterization.
+Once the products are well defined, the POs work with the software managers to help focus efforts, identify priorities, and coordinate activities.
+During the development effort, direct interaction with the developers of the components to provide guidance, definition, and use-cases and/or user stories continues in exactly the same way as is performed under the subsystem PO model.
+
+The SIT-Com Product Owner Team includes the coordinators, who are encouraged to attend whenever it is useful to do so, participation from a software manager of each subsystem, and the following members that represent several disciplines:
+
+\begin{itemize}
+    \item Deployment/IT/Networking: Michael Reuter
+    \item Observatory Control Software: Tiago Ribeiro
+    \item Camera System Functionality/Tooling: Tony Johnson
+    \item DM data pipelines and QA: Yusra AlSayyad
+    \item Support infrastructure, Nublado, Logging, chronograph, EFD, SQuaRE stuff: Simon Krughoff
+    \item Operations Infrastructure (?) -  “campaign management”, organization of data processing,  (Richard Dubois)
+    \item Representation from subsystem software managers
+    \begin{itemize}
+        \item Andy Clements (T\&S)
+        \item Yusra AlSayyad (DM)
+        \item Camera (Tony Johnson)
+        \item Christian Silva (IT)
+    \end{itemize}
+
+\end{itemize}
+
+Another significant activity of the SIT-Com PO group is to assist the System Software Coordinator in deriving and executing the series of integration milestones and activities mentioned in the previous subsection.
+The POs provide feedback such as availability of new functionality and hardware implementation timelines and schedules.
+They work with the SIT-Com leads to get the milestones scheduled in P6 and arrange to support the activity where required.
+Although the verification of requirements is not managed by this group, it is expected that they’ll assist the SE group to provide information such that the SE team can perform the verification.
+
+Lastly, the preparation and coordination of activities designed by the SIT-Com POs get coordinated via the CAP meeting (see interactions). This meeting has a broader representation from the developers across the systems. It is expected that the majority of the SIT-Com POs will regularly attend this meeting.
+
+\subsection{System Verification}
+The System Verification group focuses on the planning and analysis process steps directly related to the development of Verification Events and Scheduling, identified as steps 3 through 5 in Figure \ref{fig:verification_process} below.
+These steps, while sometimes overlooked or skipped by projects, ensure that all requirements are mapped to Verification Events.
+Additionally, these planning and scheduling steps attempt to make efficient use of Verification Activities, with the goal of combining the verification of requirements into a concise number of Verification Events. 
+This explicit review and analysis of the verification plans before scheduling events allows for like Verification Activities to be grouped, eliminating redundant activities, which ultimately saves the project cost and schedule. 
+The System Verification group also works closely with vendors to support their verification planning, review and approve the verification artifacts, optimize their verification activities to integrate them with Rubin Observatory verification activities, incorporate their verification artifacts into our Verification Architecture, ensure compliance with all requirements, and track and approve deviation requests for non-compliant requirements. 
+The System Verification group manages Change Requests and Failure Reports identified during the integration, verification, and commissioning phases.
+
+\begin{figure}[h]
+    \centering
+    \caption{The Rubin Observatory Verification Process begins with Requirements Identification and ends with Final Acceptance Review}
+    \includegraphics[width=0.5\textwidth]{static/verification_process}
+    \label{fig:verification_process}
+\end{figure}
+
+
+\subsubsection{Rubin Operations Liaison to SIT-Com}
+
+WRITE ME
 
 
 \appendix
