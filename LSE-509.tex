@@ -16,7 +16,7 @@
 % \setDocSubtitle{Optional subtitle}
 
 \author{%
-Patrick Ingraham
+Charles Claver
 }
 
 \setDocRef{LSE-509}
@@ -25,7 +25,13 @@ Patrick Ingraham
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-Add abstract text.
+The Management Plan covered in this document includes the organization and management of the Systems Integration, Test and Commissioning team (here after SIT-Com under Project WBS 06C) during the end stages of development, construction, and commissioning of the Rubin Observatory.
+    The SIT-Com team is made up of a core group of people with many others contributing from across all of the Project subsystems and the scientific user community - both domestic and foreign).
+    This document sets out SIT-Com goals.
+    It also lays out the management organization and the team’s roles and responsibilities to achieve them.
+    This document describes the team's structure, the team's regular interactions, and details the workflow of how information and tasks are communicated up and down the chain of management.
+    Lastly, this document provides a high level overview of SIT-Com scope, products and processes.
+    It provides a structured starting point for understanding SIT-Com  and pointers to Project system level documentation.
 }
 
 % Revision history.
@@ -42,6 +48,292 @@ Add abstract text.
 
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
+
+\textbf{Supporting Documents}
+
+    \begin{enumerate}
+        \item Rubin Project Execution Plan (document \citeds{LPM-54})
+
+        \item System Engineering Management Plan (document \citeds{LSE-17})
+
+        \item Commissioning Execution Plan (document \citeds{LSE-390})
+
+        \item Rubin Science Requirements Document (document \citeds{LPM-17})
+
+        \item Rubin System Requirements (document \citeds{LSE-29})
+
+        \item Rubin Observatory System Specifications (document \citeds{LSE-30})
+
+        \item Rubin Document Tree (document \citeds{LSE-39})
+
+    \end{enumerate}
+
+\textbf{Document Scope and Purpose}
+\label{sec:Scope}
+
+This document describes the overall structure, lines of decision making authority, primary communication channels, task management and workflow for the Rubin Observatory SIT-Com team.
+This plan also includes the relationship between the SIT-Com team and the other Project Level-1 WBS subsystems.
+
+\textbf{SIT-Com Mission Statement}
+Deliver a fully integrated, tested, characterized and documented Rubin Observatory system that meets its scientific, technical, and functional requirements with well defined operational procedures and processes within Project schedule and budget constraints.
+
+\textbf{Definitions of Terms}
+
+Standard LSST Acronyms and Definitions:
+\begin{enumerate}
+    \item Glossary of Abbreviations (Document-11921)
+    \item Glossary of Definitions (Document-14412)
+\end{enumerate}
+
+Acronyms and Definitions Specific to this Document:
+\begin{enumerate}
+    \item SIT-Com: Systems Integration, Test \& Commissioning
+    \item SMT: SIT-Com Management Team
+    \item SCLT: SIT-Com Leadership Team
+    \item AI\&T: Assembly, Integration and Testing
+    \item AIV: Assembly, Integration and Verification (usually in reference to Telescope \& Site activities)
+    \item LSSTCam: The Department of Energy (DOE) designation for the MIE-funded camera for LSST
+    \item CSPOs: Commissioning Software Product Owners
+\end{enumerate}
+
+\section{Project Organization in System AI\&T and Commissioning}
+\label{sec:project_organization}
+
+During system assembly, integration and test (AI\&T) and commissioning, the overall Project organizational structure remains unchanged.
+The Project Director, Deputy Director and Project Manager retain overall responsibility and authority as described in the Project Execution Plan (PEP) (LPM-54).
+The System Assembly, Integration, Test and Commissioning (SIT-Com) team has been formed and is led by the Systems Scientist.
+The high-level description of this position is to plan and execute the observatory commissioning effort, ensuring an on-time and on-budget delivery.
+The Systems Scientist has the authority to direct resources as required to meet the functional objectives described in this plan and are ultimately responsible for all aspects of SIT-Com.
+
+The SIT-Com framework, which was created relatively recently compared to the other subsystems in the project, has grown out of and now encompasses the System’s Engineering (SE) group.
+Consequently, SIT-Com is now responsible for the verification, validation, and science verification activities that are still under the auspices of the SE group.
+The SE team management plan (LSE-17) details the internal workings of that group and details the responsibilities and adopted methodologies, including verification procedures and tooling.
+More DOE specific content is found in the Commissioning Execution Plan (LSE-390).
+
+The majority of the SIT-Com team is composed of DOE and NSF funded employees, many of whom transition from the construction project.
+This strategy ensures the roots of SIT-Com reach deep into the individual subsystems and enable simultaneous coordination and planning of construction and SIT-Com specific activities, specifically regarding characterization and verification exercises.
+To help facilitate the cross-subsystem challenges and specifics related to each funding agency, the senior leadership of the SIT-Com group consists of both NSF and DOE funded personnel.
+Because many of the SIT-Com personnel are also part of the construction team, the transition and/or time sharing must be actively managed.
+During the transition, the administrative (line) managers do not change, and a functional manager from the SIT-Com team is added.
+These interactions are discussed in further detail in section XXXXX.
+Resources to SIT-Com are not restricted to only NSF and DOE funded personnel; outside funding agencies to SIT-Com are also being considered via In-Kind Contributions.
+
+ In-Kind contributions are a mechanism to exchange Rubin data rights for effort towards a specific aspect or project that is managed under the SIT-Com group.
+After a proposal and selection process, the contributors become SIT-Com team members and are included in all open SIT-Com activities.
+From a functional standpoint, all SIT-Com personnel act as a unified team regardless of home institution, funding source etc.
+On a day-to-day basis, the majority of the communication is between SIT-Com team members themselves, or with other subsystems, rather than via an advisor-to-employee mechanism.
+
+The SIT-Com group attends the normal cross-subsystem meetings as were previously attended by the SE group, but now with an continually increasing level of interaction.
+With the project now into the commissioning phase, the SIT-Com team has expanded its presence and now coordinates activities for both SIT-Com and other subsystems, particularly on the summit.
+With the expansion of the SIT-Com team, combined with being highly distributed across numerous subsystems, the structure is now adapting and evolving to meet the project's needs.
+
+The SIT-Com team has approached its structuring with a more integrated team approach in mind and intentionally deviates from a format following the T\&S, DM, and Camera subsystems.
+When the components come together and the focus moves to the characterization of an integrated system, a more global and encompassing view is required.
+The organization of the SIT-Com team and the roles delivers this view while simultaneously providing the mechanisms to communicate across subsystem boundaries.
+The details of the internal organization are described in section YYYY, with the regular interactions designed to facilitate information flow in section XXXX.
+
+\section{In-Kind Contributions}
+\label{sec:in_kind}
+
+Through both US-Chilean institutions and from foreign contributors, the Project will receive in-kind contributions to support the SIT-Com effort in achieving its goals of delivering an integrated and well-characterized Rubin Observatory system.
+These in-kind contributions do not supplant the responsibility of SIT-Com but are to add value and extend commissioning efforts for the benefit of the scientific community.
+The contributions themselves are expected to come in various forms and at different levels of support.
+It is expected that contributions to SIT-Com will come primarily in the form of off-site analysis of engineering, imaging, and catalog-based science data.
+SIT-Com will also consider direct on-site (i.e. Chile) participation from well-qualified personnel.
+A call-for-proposals is to be circulated to the scientific community where teams are expected to put forward specific projects where they can contribute in exchange for data rights. These proposals then undergo a review process by the SIT-Com Leadership. If accepted, these projects will be conducted under the direction of the SIT-Com Leadership team.
+
+As the contractual component of the contributions are often handled by parties not directly working on the deliverables, the contractual aspects are deliberately separated from the technical prioritization.
+This is meant to minimize the overhead of contract management on the people with the needed technical expertise.
+Furthermore, the deliverables from the in-kind contributions will be made as crisply defined as possible and will be made to minimize the dependencies and impacts to project personnel.
+For example, deliverables will be in the form of tech notes, reports and/or software packages as opposed to presentations.
+The management of the In-Kind contributions and the interactions with the SIT-Com team is discussed further in section XXXYYY.
+
+\section{SIT-Com Composition and Organization}
+The most critical component in the successful commissioning of the Rubin Observatory is the people.
+To perform this job thoroughly and effectively requires personnel from numerous disciplines and vast ranges in experience.
+The SIT-Com team is well populated with personnel that transition from the other subsystems once their component is nearing substantial completion.
+This is important in ensuring continuity and the long-term retention of knowledge.
+Each subsystem has assigned staff to be directly involved in the System AI\&T and Commissioning effort.
+Becoming part of the SIT-Com team results in adding a SIT-Com functional manager. However, administratively the personnel remain under their respective subsystem managers.
+
+Leaving the connection between the SIT-Com team and the originating subsystem in fact is important because these subsystems will be responsible for executing the scope of work that continues in parallel with the system-wide integration and commissioning (e.g. maintenance and routine operations activities).
+Because the personnel are often required for activities in both areas, there must be a smooth flow between "accounts" and communication of how the person's time is being split must be clearly defined.
+
+The SIT-Com team also includes more senior personnel with experience in other analogous surveys as well as junior members offering new viewpoints on classical problems combined with unrelenting enthusiasm.
+To manage the both globally and skillfully diverse team, a functional organization, from hereon referred to as the SIT-Com Leadership Team (SCLT) has been enacted and is described in the next section.
+The general commissioning team then primarily communicates and receives functional direction and task prioritization from the members of the SCLT.
+It is expected that numerous members of the SIT-Com team will be involved with multiple aspects of the commissioning effort and communicate with more than one member of the SCLT.
+
+\subsection{SIT-Com Leadership Team}
+\label{sec:SCLT}
+
+The SCLT exists to maintain efficiency, focus, autonomy and effective communication during the commissioning phase of the project.
+The SCLT organization structure consists of a minimal number of layers to ensure people get answers as quickly as possible.
+Leading the effort, the three SIT-Com Heads manage the broader commissioning scope and are the primary channels between the subsystems and senior management.
+A SIT-Com manager reports to the Heads and is responsible for task organization and assists with financial reporting and other administrative duties.
+Also reporting to the Leads, but residing at a lower branch is the team of System Coordinators, each of whom are responsible for a focused area within the commissioning effort.
+The groupings exist to help organize, distribute, coordinate and/or delegate responsibilities and activities among the SIT-Com team members with common areas of interest or expertise.
+System Coordinators report the status and current priorities of their domain to the Leadership team and maintain a publicly available list of priorities.
+System Coordinators are not supervisors and have no administrative capacity but are encouraged to make decisions whenever it is appropriate to do so.
+
+The SCLT composition, groups, and assignments are summarized as follows:
+\begin{itemize}
+    \item SIT-Com Leads:
+    \begin{itemize}
+        \item Chuck Claver
+        \item Kevin Reil (Deputy Chile)
+        \item Sandrine Thomas (Deputy Tucson)
+    \end{itemize}
+    \item SIT-Com Manager
+    \begin{itemize}
+        \item TBD
+    \end{itemize}
+    \item System Coordinators
+    \begin{itemize}
+        \item Calibration and Auxtel System - Patrick Ingraham
+        \item Camera systems - Brian Stalder
+        \item Rubin Operations Liaison to SIT-Com - Leanne Guy
+        \item Science Verification/Validation - Keith Bechtol
+        \item Software Integration - Robert Lupton
+        \item System Verification - Austin Roberts
+    \end{itemize}
+\end{itemize}
+
+
+It is recognized that there are commissioning related items or tasks that do not always fall into these categories.
+These are managed on a case-by-case basis amongst the leadership team.
+Also, the boundaries of these groupings are intentionally not explicitly defined.
+The broad commissioning team is then shuffled between the numerous groups and are not confined in any particular way.
+It is expected that members will participate in numerous groups simultaneously.
+The roles and responsibilities of the system coordinators are further detailed in section XXYY, and the scope of each group is described in section XXXYY.
+Lastly, in-kind contributions are also assigned to a group depending upon the project.
+This is discussed in section YYYY.
+
+\subsection{SIT-Com Leads’ Roles \& Responsibilities}
+\label{sec:r_and_rs}
+
+For commissioning to be successful, it is important to maintain a continuity of knowledge and expertise from the construction project.
+The SIT-Com leadership, and specifically the Heads, are a combination of leaders in the Telescope \& Site, Camera, and Systems Engineering subsystems.
+The broader SIT-Com effort is managed by these three people.
+Their primary roles include reporting and communicating the global priorities to the project managers and directors, managing and negotiating the prioritization of SIT-Com activities in coordination with the activities of the other subsystems, as well as managing the P6 integrated master schedule, risk register entries and scope options.
+They also help direct and coordinate short-term task management, as will be further discussed in section YYYY (interactions).
+The division of labour between the three Heads is summarized as follows:
+\begin{itemize}
+    \item SIT-Com Lead (Systems Scientist):
+    \begin{itemize}
+        \item Owns the overall scope of the Rubin System Integration, Test and Commissioning effort
+        \item Lead the SIT-Com strategic vision and planning
+        \item Possesses ultimate decision authority and responsibility for system delivery
+        \item Maintains the overall commissioning schedule and milestones in the integrated master schedule (P6)
+        \item Maintains EVMS status, reporting (including the monthly report)
+        \item Maintains SIT-Com/System Engineer specific risks as part of the Rubin Risk Register
+        \item Primary interface to senior project management
+        \item Advocate to ensure required resources are made available to support SIT-Com objectives and ultimately the project completion
+        \item Primary representative for community interfacing
+        \item Provide technical and scientific evaluation of decisions leading to changes in priorities
+    \end{itemize}
+    \item Deputy SIT-Com Lead (Chile)
+    \begin{itemize}
+        \item Coordinate and prioritize the scheduling of Chile-based SIT-Com and prerequisite activities in collaboration with other subsystems as determined by the global project strategic plan
+        \item Functional manager for the SIT-Com team in Chile
+        \item Meet regularly with all Chile based SIT-Com staff to ensure they are focused on the proper activities and to collect feedback
+        \item Primary liaison between between SIT-Com and the DOE-based LSSTCam teams
+        \item Maintains Risk Management and scope options specific to DOE
+        \item Provide technical and scientific evaluation of decisions leading to changes in priorities
+    \end{itemize}
+\item Deputy SIT-Com Lead (Tucson)
+    \begin{itemize}
+        \item Lead in the AIV planning, with a focus on activities involving interactions with telescope systems
+        \item Leads planning of incremental component integration in the IMS
+        \item Leads component integration test preparation, procedure, and success criteria
+        \item Leads optical integration and verification of the telescope system
+        \item Coordinates control software readiness and support for summit-integration activities
+        \item Primary liaison between between SIT-Com and the T\&S teams
+        \item Coordinate remote support of Tucson based personnel for integration and testing in Chile
+        \item Provide technical and scientific evaluation of decisions leading to changes in priorities
+    \end{itemize}
+\end{itemize}
+
+\subsection{SIT-Com Manager Roles \& Responsibilities}
+\label{sec:manager_r_and_rs}
+The high-level description of the SIT-Com manager is to coordinate and execute a series of tasks that are aligned to the priorities informed by the group coordinators, but ultimately set by the SIT-Com Leads.
+The manager also performs numerous administrative duties and assists in developing ideas and/or pieces of scope from a conceptual design into actionable tasks.
+These tasks then get managed via the SIT-Com Jira project (discussed in section XXXYYY). The key roles of the SIT-Com manager are as follows:
+\begin{itemize}
+    \item Manages SIT-Com Jira project used to track SIT-Com progress
+    \item Holds regular task planning meetings with coordinators (see interactions section)
+    \item Collaborates with coordinators to understand and track task dependencies and need dates
+    \item Manages backlog of accumulating small items that cannot be immediately completed and raises their priority once blocking issue(s) are resolved
+    \item Supports all activity prioritization and planning meetings
+    \item Elevates issues and completes FRACAS tickets when appropriate
+    \item Assists with administrative duties such as financial reporting, timecard and charge account management
+    \item Assists with monthly report generation and completion
+    \item Works with coordinators to help identify and prioritize resources over short (~1 month) timescales
+    \item Manages backlog of tasks and/or functionalities that require further detailing or definition
+    \item Organizes SIT-Com documentation structure and content
+Coordinates and/or delegates tasks or activities that do not naturally fall into one of the groups
+\end{itemize}
+
+\subsection{SIT-Com Coordinator Roles \& Responsibilities}
+Each of the SIT-Com coordinators are responsible for the integration and commissioning activities of their technical domain.
+More importantly, they are responsible for the communication of those activities’ prerequisites and required resources to the general SIT-Com community.
+The key roles of coordinators are as follows:
+\begin{itemize}
+    \item Maintain a standardized and publicly viewable list of current priorities and tasks for their group
+    \item Communicate the needs and/or issues encountered to the SIT-Com Leads and other coordinators, particularly when it involves resources and/or coordination with other subsystems
+    \item Work with in-kind contributors to develop and delegate tasks with clearly defined deliverables
+    \item A technical delegate may be assigned to each in-kind contributor if required
+    \item Participate to regular SCLT meetings to discuss task prioritization, scheduling, and resource management
+    \item Assist the SIT-Com Heads is preparing materials for reviews/meetings/workshops etc.
+    \item Assist SIT-Com Heads by supplying information to better inform the global priority of SIT-Com tasks and/or issues with significant impact to cost/schedule or requirements
+    \item Assist in development of SIT-Com specific work-flows or processes
+\end{itemize}
+
+\subsection{In-Kind Liaison Roles \& Responsibilities}
+The In-kind Liaison exists to provide a dedicated contact between the SCLT and the numerous in-kind contributors, specifically for administrative purposes.
+As mentioned above, the coordinators will assist in developing and communicating the technical aspects or requirements, however, the contractual aspects, including schedule conflicts, are to be managed by the In-kind Liaison.
+This is deliberate to ensure the personnel with the technical expertise remain focused on their tasks.
+Furthermore, having a single person managing the contractual aspects will help ensure uniformity in both expectations of deliverables and the amount of effort expected for the contributor's awarded data rights.
+The role of the in-kind liaison is to:
+\begin{itemize}
+    \item Be the primary contact to In-Kind contributors
+    \item Work with the SCLT to identify and assign an appropriate group coordinator to lead the technical aspects of the contribution
+    \item Work with coordinators to define deliverables, ideally in the form of technotes, reports, or software.
+    \item Manage administrative aspects of the contract, including schedule and expected level of effort.
+    This includes interacting with the SIT-Com Leads and/or higher management when applicable
+    \item Track and organize deliverables by in-kind organizations
+    \item Work with SIT-Com manager to track contributions and currently assigned in-kind tasks as part of the SIT-Com Jira project
+\end{itemize}
+
+\subsection{SIT-Com Team Members Roles \& Responsibilities}
+The role of team members is to participate in the general commissioning effort by way of completing outstanding issues that correspond to the priorities set by the SCLT.
+This includes following the standard practices, workflows, and artifact deliverables.
+It is expected that SIT-Com team members will often interact with more than one coordinator and are encouraged to do so.
+The interactions of the SIT-Com team members with the in-kind contributors will be accessed on a case-by-case basis.
+However, it is expected that SIT-Com members will collaborate regularly on numerous and often simultaneous projects.
+
+Another method for people to contribute is by participation in SIT-Com Teams and working groups.
+SIT-Com teams are being developed to bring in expertise across the project to tackle issues related to a specific area or discipline (e.g. image quality).
+Teams work together to address key questions and/or challenges that are defined in a team charge that is written jointly with the SCLT.
+The priorities of the team are directed based upon SIT-Com priorities and schedule and the results are communicated to the SCLT via a liaison that is present in both groups.
+Any member of SIT-Com can lead a team.
+However, the formation of the team and the charge must be agreed upon in collaboration with the SCLT and a representative of the SCLT must be assigned.
+Teams differ from working groups because their goals and schedules are more fluid and are expected to evolve as new problems and issues arise.
+
+SIT-Com working groups are formed to address a specific charge in a timely manner and are then dissolved.
+The formation of a working group can be suggested by anyone, however the charge must come from the SCLT.
+The charge will include specific questions, deliverables, and an expected timeline.
+Depending upon the nature of the charge, participation to working groups may be performed by opening a call for volunteers, or by assigning specific individuals.
+It is expected that the majority of SIT-Com studies and activities will be run via teams and working groups will only be created when absolutely necessary.
+
+\section{Leadership Team Group Definitions}
+\label{sec:group_definitions}
+
+The functional grouping and assignment of a coordinator is arranged according to both domains of expertise and collections of instrumentation.
+Although the intentional separation of subsystems has resulted in a stovepiping of expertise associated with individual components, this arrangement aims to remove that separation of personnel and assembles collections of people to consider how the observatory will function at a systems level.
+The following subsections describe the functional responsibilities of each group and the expected interactions that will occur with people providing assistance from various areas of the project.
+
+
 
 \appendix
 
