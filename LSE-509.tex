@@ -18,7 +18,7 @@
 % \setDocSubtitle{Optional subtitle}
 
 \author{%
-Charles Claver
+Charles Claver, Patrick Ingraham
 }
 
 \setDocRef{LSE-509}
@@ -27,13 +27,12 @@ Charles Claver
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-The Management Plan covered in this document includes the organization and management of the Systems Integration, Test and Commissioning team (here after SIT-Com under Project WBS 06C) during the end stages of development, construction, and commissioning of the Rubin Observatory.
-    The SIT-Com team is made up of a core group of people with many others contributing from across all of the Project subsystems and the scientific user community - both domestic and foreign).
-    This document sets out SIT-Com goals.
-    It also lays out the management organization and the team’s roles and responsibilities to achieve them.
-    This document describes the team's structure, the team's regular interactions, and details the workflow of how information and tasks are communicated up and down the chain of management.
-    Lastly, this document provides a high level overview of SIT-Com scope, products and processes.
-    It provides a structured starting point for understanding SIT-Com  and pointers to Project system level documentation.
+The Management Plan covered in this document includes the organization and management of the Systems Integration, Test and Commissioning team (here after SIT-Com) during the end stages of development, construction, and commissioning of the Rubin Observatory.
+    The SIT-Com team is composed of a core group of people working nearly full time on SIT-Com activities as well as numerous others contributing from across all of the Project subsystems and the scientific user community - both domestic and foreign.
+    This document describes the composition of this diverse team and the challeges of managing a team that are undertaking tasks spanning numerous disciplines.
+    It also lays out the management organization, leadership structure, and the team’s roles and responsibilities.
+    This document also describes the team's regular interactions, and details the workflow of how information and tasks are communicated up and down the chain of management.
+    Lastly, this document provides a high-level overview of SIT-Com scope, products and processes and acts as a structured starting point for understanding SIT-Com and provides pointers to Project system level documentation.
 }
 
 % Revision history.
@@ -70,21 +69,21 @@ The Management Plan covered in this document includes the organization and manag
 
     \end{enumerate}
 
+\textbf{SIT-Com Mission Statement}
+Deliver a fully integrated, tested, characterized and documented Rubin Observatory system that meets its scientific, technical, and functional requirements with well defined operational procedures and processes within Project schedule and budget constraints.
+
 \textbf{Document Scope and Purpose}
 \label{sec:Scope}
 
 This document describes the overall structure, lines of decision making authority, primary communication channels, task management and workflow for the Rubin Observatory SIT-Com team.
 This plan also includes the relationship between the SIT-Com team and the other Project Level-1 WBS subsystems.
 
-\textbf{SIT-Com Mission Statement}
-Deliver a fully integrated, tested, characterized and documented Rubin Observatory system that meets its scientific, technical, and functional requirements with well defined operational procedures and processes within Project schedule and budget constraints.
-
 \textbf{Definitions of Terms}
 
-Standard LSST Acronyms and Definitions:
+Standard Rubin Acronyms and Definitions:
 \begin{enumerate}
-    \item Glossary of Abbreviations (Document-11921)
-    \item Glossary of Definitions (Document-14412)
+    \item Glossary of Abbreviations (\citeds{Document-11921})
+    \item Glossary of Definitions (\citeds{Document-14412})
 \end{enumerate}
 
 Acronyms and Definitions Specific to this Document:
@@ -94,7 +93,7 @@ Acronyms and Definitions Specific to this Document:
     \item SCLT: SIT-Com Leadership Team
     \item AI\&T: Assembly, Integration and Testing
     \item AIV: Assembly, Integration and Verification (usually in reference to Telescope \& Site activities)
-    \item LSSTCam: The Department of Energy (DOE) designation for the MIE-funded camera for LSST
+    \item LSSTCam: The Department of Energy (DOE) designation for the MIE-funded camera for Rubin
     \item CSPOs: Commissioning Software Product Owners
 \end{enumerate}
 
@@ -102,18 +101,18 @@ Acronyms and Definitions Specific to this Document:
 \label{sec:project_organization}
 
 During system assembly, integration and test (AI\&T) and commissioning, the overall Project organizational structure remains unchanged.
-The Project Director, Deputy Director and Project Manager retain overall responsibility and authority as described in the Project Execution Plan (PEP) (LPM-54).
+The Project Director, Deputy Director and Project Manager retain overall responsibility and authority as described in the Project Execution Plan (PEP) (\citeds{LPM-54}).
 The System Assembly, Integration, Test and Commissioning (SIT-Com) team has been formed and is led by the Systems Scientist.
 The high-level description of this position is to plan and execute the observatory commissioning effort, ensuring an on-time and on-budget delivery.
 The Systems Scientist has the authority to direct resources as required to meet the functional objectives described in this plan and are ultimately responsible for all aspects of SIT-Com.
 
-The SIT-Com framework, which was created relatively recently compared to the other subsystems in the project, has grown out of and now encompasses the System’s Engineering (SE) group.
-Consequently, SIT-Com is now responsible for the verification, validation, and science verification activities that are still under the auspices of the SE group.
-The SE team management plan (LSE-17) details the internal workings of that group and details the responsibilities and adopted methodologies, including verification procedures and tooling.
-More DOE specific content is found in the Commissioning Execution Plan (LSE-390).
+The SIT-Com framework, which was created relatively recently in comparison to the other subsystems in the project, has grown out of and now encompasses the System's Engineering (SE) group.
+Consequently, SIT-Com is now responsible for the verification, validation, and science verification activities, however they remain under the auspices of the SE group.
+The SE team management plan (\citeds{LSE-17}) details the internal workings of that group and details the responsibilities and adopted methodologies, including verification procedures and tooling.
+More DOE specific content is found in the Commissioning Execution Plan (\citeds{LSE-390}).
 
 The majority of the SIT-Com team is composed of DOE and NSF funded employees, many of whom transition from the construction project.
-This strategy ensures the roots of SIT-Com reach deep into the individual subsystems and enable simultaneous coordination and planning of construction and SIT-Com specific activities, specifically regarding characterization and verification exercises.
+This strategy ensures the roots of SIT-Com reach deep into the individual subsystems and enable simultaneous coordination and planning of construction and SIT-Com activities, specifically regarding characterization and verification exercises.
 To help facilitate the cross-subsystem challenges and specifics related to each funding agency, the senior leadership of the SIT-Com group consists of both NSF and DOE funded personnel.
 Because many of the SIT-Com personnel are also part of the construction team, the transition and/or time sharing must be actively managed.
 During the transition, the administrative (line) managers do not change, and a functional manager from the SIT-Com team is added.
@@ -122,49 +121,57 @@ Resources to SIT-Com are not restricted to only NSF and DOE funded personnel; ou
 
  In-Kind contributions are a mechanism to exchange Rubin data rights for effort towards a specific aspect or project that is managed under the SIT-Com group.
 After a proposal and selection process, the contributors become SIT-Com team members and are included in all open SIT-Com activities.
-From a functional standpoint, all SIT-Com personnel act as a unified team regardless of home institution, funding source etc.
+This is discussed in detail in section \ref{sec:in_kind}.
+From a functional standpoint, all SIT-Com personnel act as a unified team regardless of home institution, funding source, previously associated subsystem etc.
 On a day-to-day basis, the majority of the communication is between SIT-Com team members themselves, or with other subsystems, rather than via an advisor-to-employee mechanism.
 
-The SIT-Com group attends the normal cross-subsystem meetings as were previously attended by the SE group, but now with an continually increasing level of interaction.
+The SIT-Com group attends the normal cross-subsystem meetings as were previously attended by the SE group, but with an continually increasing level of interaction.
 With the project now into the commissioning phase, the SIT-Com team has expanded its presence and now coordinates activities for both SIT-Com and other subsystems, particularly on the summit.
 With the expansion of the SIT-Com team, combined with being highly distributed across numerous subsystems, the structure is now adapting and evolving to meet the project's needs.
 
 The SIT-Com team has approached its structuring with a more integrated team approach in mind and intentionally deviates from a format following the T\&S, DM, and Camera subsystems.
 When the components come together and the focus moves to the characterization of an integrated system, a more global and encompassing view is required.
-The organization of the SIT-Com team and the roles delivers this view while simultaneously providing the mechanisms to communicate across subsystem boundaries.
-The details of the internal organization are described in section YYYY, with the regular interactions designed to facilitate information flow in section \ref{sec:interactions}.
+The organization of the SIT-Com team, discussed in section \ref{sec:comp_and_org}, delivers this view while simultaneously providing the mechanisms to communicate across subsystem boundaries (section \ref{sec:interactions}).
 
 \section{In-Kind Contributions}
 \label{sec:in_kind}
 
-Through both US-Chilean institutions and from foreign contributors, the Project will receive in-kind contributions to support the SIT-Com effort in achieving its goals of delivering an integrated and well-characterized Rubin Observatory system.
+Through both US-Chilean institutions and from foreign contributors, the Project will receive in-kind contributions to support the SIT-Com effort to delive an integrated and well-characterized Rubin Observatory.
 These in-kind contributions do not supplant the responsibility of SIT-Com but are to add value and extend commissioning efforts for the benefit of the scientific community.
 The contributions themselves are expected to come in various forms and at different levels of support.
 It is expected that contributions to SIT-Com will come primarily in the form of off-site analysis of engineering, imaging, and catalog-based science data.
 SIT-Com will also consider direct on-site (i.e. Chile) participation from well-qualified personnel.
-A call-for-proposals is to be circulated to the scientific community where teams are expected to put forward specific projects where they can contribute in exchange for data rights. These proposals then undergo a review process by the SIT-Com Leadership. If accepted, these projects will be conducted under the direction of the SIT-Com Leadership team.
+A call-for-proposals has been circulated to the scientific community where teams are expected to put forward specific projects where they can contribute in exchange for data rights.
+These proposals will then undergo a review process by the SIT-Com Leadership.
+If accepted, these projects will be conducted under the direction of the SIT-Com Leadership team.
 
 As the contractual component of the contributions are often handled by parties not directly working on the deliverables, the contractual aspects are deliberately separated from the technical prioritization.
 This is meant to minimize the overhead of contract management on the people with the needed technical expertise.
-Furthermore, the deliverables from the in-kind contributions will be made as crisply defined as possible and will be made to minimize the dependencies and impacts to project personnel.
+Furthermore, the deliverables from the in-kind contributions will be as crisply defined as possible designed to minimize the dependency and impacts to project personnel.
 For example, deliverables will be in the form of tech notes, reports and/or software packages as opposed to presentations.
-The management of the In-Kind contributions and the interactions with the SIT-Com team is discussed further in section \ref{sec:interactions}.
+The management of the In-Kind contributions and the interactions with the SIT-Com team is discussed further in sections \ref{sec:SCLT} and \ref{sec:interactions}.
 
 \section{SIT-Com Composition and Organization}
+\label{sec:comp_and_org}
+
 The most critical component in the successful commissioning of the Rubin Observatory is the people.
 To perform this job thoroughly and effectively requires personnel from numerous disciplines and vast ranges in experience.
-The SIT-Com team is well populated with personnel that transition from the other subsystems once their component is nearing substantial completion.
+The SIT-Com team includes numerous senior personnel with experience in other analogous surveys as well as junior members offering new viewpoints on classical problems combined with their unrelenting enthusiasm.
+Moreoever, the team is well populated with personnel that transition from the other subsystems once their component is nearing substantial completion.
 This is important in ensuring continuity and the long-term retention of knowledge.
 Each subsystem has assigned staff to be directly involved in the System AI\&T and Commissioning effort.
-Becoming part of the SIT-Com team results in adding a SIT-Com functional manager. However, administratively the personnel remain under their respective subsystem managers.
 
-Leaving the connection between the SIT-Com team and the originating subsystem in fact is important because these subsystems will be responsible for executing the scope of work that continues in parallel with the system-wide integration and commissioning (e.g. maintenance and routine operations activities).
-Because the personnel are often required for activities in both areas, there must be a smooth flow between ``accounts" and communication of how the person's time is being split must be clearly defined.
-
-The SIT-Com team also includes more senior personnel with experience in other analogous surveys as well as junior members offering new viewpoints on classical problems combined with unrelenting enthusiasm.
 To manage the both globally and skillfully diverse team, a functional organization, from hereon referred to as the SIT-Com Leadership Team (SCLT) has been enacted and is described in the next section.
 The general commissioning team then primarily communicates and receives functional direction and task prioritization from the members of the SCLT.
 It is expected that numerous members of the SIT-Com team will be involved with multiple aspects of the commissioning effort and communicate with more than one member of the SCLT.
+%
+%Becoming part of the SIT-Com team results in adding a SIT-Com functional manager to the chain of command.
+%However, administratively the personnel remain under their respective subsystem managers.
+%Leaving the connection between the SIT-Com team and the originating subsystem intact is important because these subsystems will be responsible for executing the scope of work that continues in parallel with the system-wide integration and commissioning (e.g. maintenance and routine operations activities).
+%Because the personnel are often required for activities in both domains, how the person's time is being divided must be clearly defined as well as where the time for each activity should be charged.
+%These types of situations are discussed in detail in section \ref{sec:task_management}.
+
+
 
 \subsection{SIT-Com Leadership Team}
 \label{sec:SCLT}
@@ -270,7 +277,7 @@ These tasks then get managed via the SIT-Com Jira project (discussed in section 
     \item Elevates issues and completes FRACAS tickets when appropriate
     \item Assists with administrative duties such as financial reporting, timecard and charge account management
     \item Assists with monthly report generation and completion
-    \item Works with coordinators to help identify and prioritize resources over short (~1 month) timescales
+    \item Works with coordinators to help identify and prioritize resources over short ($\sim$1 month) timescales
     \item Manages backlog of tasks and/or functionalities that require further detailing or definition
     \item Organizes SIT-Com documentation structure and content
 Coordinates and/or delegates tasks or activities that do not naturally fall into one of the groups
@@ -438,8 +445,8 @@ The SIT-Com Product Owner Team includes the coordinators, who are encouraged to 
     \item Observatory Control Software: Tiago Ribeiro
     \item Camera System Functionality/Tooling: Tony Johnson
     \item DM data pipelines and QA: Yusra AlSayyad
-    \item Support infrastructure, Nublado, Logging, chronograph, EFD, SQuaRE stuff: Simon Krughoff
-    \item Operations Infrastructure (?) -  “campaign management”, organization of data processing,  (Richard Dubois)
+    \item Support infrastructure, Nublado, Logging, Chronograph, EFD, etc.: Simon Krughoff
+    \item Operations Infrastructure (TBR) -  ``campaign management", organization of data processing: Richard Dubois
     \item Representation from subsystem software managers
     \begin{itemize}
         \item Andy Clements (T\&S)
@@ -474,14 +481,13 @@ The System Verification group manages Change Requests and Failure Reports identi
 
 
 \subsubsection{Rubin Operations Liaison to SIT-Com}
+\label{sec:SCLT_liason_to_ops}
 
-\textbf{WRITE ME}
-
-Assist in prioritizing verification and characterization activities based on how the operations plan is evolving.
-
-Identify and evaluate missing scope (training, tools etc) from both the construction and operations projects then work to fill the gaps on one side or the other
-
-Facilitate a smooth transition.. chase down answers to questions required from the ops team etc.
+The Rubin Operations Liaison to SIT-Com position exists to facilitate a smooth transition between Commissioning and Operations.
+One of the primary roles is to assist in understanding how the feedback between the on-going verification and characterization activities and the planning for the early stages of operations.
+For example, this may include identifying the requirements which are most vital to the Operation's Team System Performance goals, then helping to priorize the appropriate system and/or science verification activities.
+The Liaison will also assist in identifying missing or under-scoped activities (training, tools etc) from either of the construction and operations projects; then work together with both parties to derive appropriate coverage and/or mitigation.
+It is expected that this person will also be the lead in acquiring operations related information for SIT-Com Teams and or working groups who would benefit from additional context and/or use-cases.
 
 \section{SIT-Com Team Interactions}
 \label{sec:interactions}
@@ -494,7 +500,7 @@ However, the information flow during the meetings is bi-directional with the sub
 \textbf{Strategic Planning Meeting}
 
 \begin{itemize}
-    \item Weekly cadence with ~10 attendees
+    \item Weekly cadence with $\sim$10 attendees
     \item Organized and executed by the Rubin Project Manager
     \item Attended by senior management of each subsystem, including at least two (often three) of the SIT-Com Leads
     \item Identifies mid-to-long term priorities
@@ -505,7 +511,7 @@ However, the information flow during the meetings is bi-directional with the sub
 \textbf{SIT-Com Leadership Team Meeting}
 
 \begin{itemize}
-    \item Weekly cadence with ~10 SCLT members
+    \item Weekly cadence with $\sim$10 SCLT members
     \item Additional attendees are often invited for detailed technical discussions
     \item Organized and executed by SIT-Com Lead(s)
     \item Lead(s) present feedback from Strategic Planning Meeting on global priorities and recent events/impacts
@@ -518,7 +524,7 @@ However, the information flow during the meetings is bi-directional with the sub
 \textbf{SIT-Com General Assembly Meeting}
 
 \begin{itemize}
-    \item Monthly cadence with ~30+ attendees
+    \item Monthly cadence with $\sim$30+ attendees
     \item Scheduled for the first Monday of the month and replaces Leadership team meeting
     \item Executed by SIT-Com Lead(s) with content contributed by system coordinators
     \item Presents high-level project status, priorities and recent events that may impact SIT-Com activities
@@ -529,7 +535,7 @@ However, the information flow during the meetings is bi-directional with the sub
 
 \textbf{SIT-Com Product Owner Meeting}
 \begin{itemize}
-    \item Bi-Weekly cadence with ~12 attendees
+    \item Bi-Weekly cadence with $\sim$12 attendees
     \item Organized and executed by SIT-Com Software Integration System coordinators
     \item Expectation that this meeting replaces the T\&S PO meetings, therefore, most attendees will not have an additional meeting
 \end{itemize}
@@ -537,7 +543,7 @@ However, the information flow during the meetings is bi-directional with the sub
 
 \textbf{Commissioning Activity Planning Coordination Meeting}
 \begin{itemize}
-    \item Weekly cadence with ~20 attendees
+    \item Weekly cadence with $\sim$20 attendees
     \item Executed by SIT-Com Software Integration Lead
     \item Meeting is attended by numerous system coordinators and SIT-Com Product Owners
     \item Used to perform low-level prioritization of cross-subsystem software and IT related tasks
@@ -551,33 +557,42 @@ However, the information flow during the meetings is bi-directional with the sub
 The responsibility of task management primarily resides with the SIT-Com manager who coordinates activities in close coordination with the system coordinators.
 Individual team members are also responsible for documenting their activities and providing time estimates to completion.
 The diverse nature of the tasks combined with the coordination of a large team necessitates the use of a task management tool.
-Like the rest of the project, SIT-Com has adopted the use of Jira.
+Like the rest of the project, SIT-Com has adopted the use of Jira and is now working to derive an appropriate workflow that spans the multi-discipline and multi-faceted activities of the team.
 
-The task priorities are defined by the series of meetings discussed in the previous section.
-The system coordinator is then responsible for maintaining the activities under their purview.
-The SIT-Com is a collaboration of numerous individuals coming from different institutions, nearly all of whom work on other projects beyond Rubin Commissioning activities.
-Therefore, SIT-Com does not utilize a standardized sprint planning and story-point accounting scheme.
-Instead, the SCLT will define goals and present their priorities for each month during the General Assembly meeting.
-The system coordinators and team members will then align their tasks in accordance with those priorities and constraints.
+Although the workflow is not yet finalized, the structure to facilitate it's operation is well-developed.
+The global task priorities are defined first by a series of milestones, which are broken down into a series of tasks (epics), and ultimately into individual tasks.
+The order and week-to-week prioritization and coordination of the epics/tasks are organized with input from a s eries of meetings (discussed in the previous section) with appropriate timeline estimates.
+Each system coordinator, in collaboration with the SIT-Com team members carrying out the tasks, is then responsible for deriving, maintaining, and statusing the activities under their purview.
+A roll-up of the status is reported each week at the SCLT meetings and timelines and/or the number of personnel working on a specific task are adjusted appropriately.
+All work will be tracked in Jira and ultimately linked to SIT-Com milestones carried at the project level (in P6).
 
-\textbf{Jira}
-\begin{itemize}
-    \item Need a work tracking tool with a managed backlog
-    \item M. Reuter can do the Jira setup work, but not the backlog management/prioritization
-    \item Needs more global input and to be assigned/tracked at numerous meetings
-    \item All COMs team members should have “sprints” - more to keep us on track than to evaluate efficiency etc.
-    \item Monthly (bi-monthly?) sprint planning meeting (which is big) should occur
-    \item Could add it on to the monthly meeting.
-    \item How do story-points work?
-    \item Do we need to implement this?
-    \item We need to at least estimate the type of resources needed and the time required.
-\end{itemize}
+The detailing of the task management plan is currently under active development and this section will be updated in the next release of this document.
+
+%Because SIT-Com is a collaboration of numerous individuals coming from different institutions, nearly all of whom work on other projects beyond Rubin Commissioning activities and have varying amounts of time devoted to Rubin Activities, it is
+%Therefore, SIT-Com will not strictly follow the sprint planning and story-point accounting scheme that is typically used in Agile (software) development frameworks.
+%Instead, the SCLT will define goals and present their priorities for each month during the General Assembly meeting.
+%The system coordinators and team members will then align their tasks in accordance with those priorities and constraints and work with SIT-Com personnel to
+%define sprints, with the number of activities being adapted to each team member.
+%
+%
+%\textbf{Jira}
+%\begin{itemize}
+%    \item Need a work tracking tool with a managed backlog
+%    \item M. Reuter can do the Jira setup work, but not the backlog management/prioritization
+%    \item Needs more global input and to be assigned/tracked at numerous meetings
+%    \item All COMs team members should have “sprints” - more to keep us on track than to evaluate efficiency etc.
+%    \item Monthly (bi-monthly?) sprint planning meeting (which is big) should occur
+%    \item Could add it on to the monthly meeting.
+%    \item How do story-points work?
+%    \item Do we need to implement this?
+%    \item We need to at least estimate the type of resources needed and the time required.
+%\end{itemize}
 
 
 \subsection{Time Accounting}
 \label{sec:time}
 
-The time accounting and activity separation between subsystems and Commissioning (now SIT-Com) was previously defined in LSE-70 as, ``An activity is considered part of commissioning when it involves a delivered component from one subsystem ``touching" that of another subsystem."
+The time accounting and activity separation between subsystems and Commissioning (now SIT-Com) was previously defined in \citeds{LSE-70} as, ``An activity is considered part of commissioning when it involves a delivered component from one subsystem ``touching" that of another subsystem."
 This also meant that if Commissioning identified an issue or problem caused by a component delivered by a subsystem (e.g. the dome), it was responsible for the subsystem (T\&S) to remedy the issue.
 This definition proved useful for many years but is now no longer sufficiently detailed to address all questions and scenarios related to time accounting.
 This section expands that definition and provides examples of how personnel and management make decisions regarding the charging of accounts for tasks performed by SIT-Com personnel.
@@ -656,27 +671,27 @@ This is shown in Figure \ref{fig:verification_workflow}.
     \label{fig:verification_workflow}
 \end{figure}
 
-The full details of the Rubin Observatory Verification Process is described in LSE-160.
+The full details of the Rubin Observatory Verification Process is described in \citeds{LSE-160}.
 
-\subsection{Software Code Management}
-
-\textbf{This should go probably go in a technote.}
-\begin{itemize}
-    \item Outline that we follow DM and T\&S development practices
-    \item Expectations of commissioning personnel and their interaction with the software system for characterization testing is in tstn-024
-    \item Contribution of how commissioning team code gets incorporated is in tstn-010
-    \item Configuration changes by commissioning personnel (and others) follow tstn-017
-    \item Repo management?  Identify resources that are need but not present in the Project
-\end{itemize}
+%\subsection{Software Code Management}
+%
+%\textbf{This should go probably go in a technote.}
+%\begin{itemize}
+%    \item Outline that we follow DM and T\&S development practices
+%    \item Expectations of commissioning personnel and their interaction with the software system for characterization testing is in tstn-024
+%    \item Contribution of how commissioning team code gets incorporated is in tstn-010
+%    \item Configuration changes by commissioning personnel (and others) follow tstn-017
+%    \item Repo management?  Identify resources that are need but not present in the Project
+%\end{itemize}
 
 \section{Environment, Health and Safety}
 
-The Rubin Safety Policy (LPM-18) will continue to be the guiding document that defines Rubin’s safety culture, expected safety behaviors, and details broad responsibilities for all those who work for Rubin.
+The Rubin Safety Policy (\citeds{LPM-18}) will continue to be the guiding document that defines Rubin’s safety culture, expected safety behaviors, and details broad responsibilities for all those who work for Rubin.
 The Rubin Project is centrally managed but executed by several teams in distributed locations and with different funding sponsors.
-This Rubin Safety Policy covers all LSST Project efforts while recognizing and relying on existing Safety,
+This Rubin Safety Policy covers all Rubin Project efforts while recognizing and relying on existing Safety,
 Health and Environmental policies in place at participating institutions.
 
-Given that environmental conditions on the summit can be uncomfortable and activities can be complex, the Summit Site Safety, Health, and Environmental Plan (LPM-114) details required communications, minimum safety processes and procedures.
+Given that environmental conditions on the summit can be uncomfortable and activities can be complex, the Summit Site Safety, Health, and Environmental Plan (\citeds{LPM-114}) details required communications, minimum safety processes and procedures.
 Due to the varied activities that will be occurring on the summit, the following processes will be enforced: 1) Work Stop Authority, 2) the morning Plan of the Day, and 3) the overarching authority to direct work of the Site Manager.  In addition, many other safety control processes will be in place, including but not limited to:
 \begin{itemize}
     \item Known hazards are recognized in the Rubin Hazard Analysis process and are mitigated or minimized;
@@ -688,8 +703,8 @@ Due to the varied activities that will be occurring on the summit, the following
 
 \section{Risks and Hazards in Commissioning}
 \subsection{Risks}
-SIT-Com will maintain a shared risk registry developed using the template of the DOE MIE project risk registry (LCA-30).
-The risk analysis follows key concepts presented in both the Camera Risk Management Plan (LCA-29) and the Rubin Risk and Opportunity Management Plan (LPM-20).
+SIT-Com will maintain a shared risk registry developed using the template of the DOE MIE project risk registry (\citeds{LCA-30}).
+The risk analysis follows key concepts presented in both the Camera Risk Management Plan (LCA-29) and the Rubin Risk and Opportunity Management Plan (\citeds{LPM-20}).
 Risks and contingent events can affect the commissioning schedule and budget; managing risks is essential and helps determine sufficiency of contingency funding.
 
 The bottom up estimates for scheduled work are, as required, success oriented.
