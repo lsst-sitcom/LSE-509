@@ -18,7 +18,7 @@
 % \setDocSubtitle{Optional subtitle}
 
 \author{%
-Charles Claver, Patrick Ingraham
+Charles (Chuck) Claver, Patrick Ingraham
 }
 
 \setDocRef{LSE-509}
@@ -27,12 +27,12 @@ Charles Claver, Patrick Ingraham
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-The Management Plan covered in this document includes the organization and management of the Systems Integration, Test and Commissioning team (here after SIT-Com) during the end stages of development, construction, and commissioning of the Rubin Observatory.
-    The SIT-Com team is composed of a core group of people working nearly full time on SIT-Com activities as well as numerous others contributing from across all of the Project subsystems and the scientific user community - both domestic and foreign.
-    This document describes the composition of this diverse team and the challeges of managing a team that are undertaking tasks spanning numerous disciplines.
-    It also lays out the management organization, leadership structure, and the team’s roles and responsibilities.
-    This document also describes the team's regular interactions, and details the workflow of how information and tasks are communicated up and down the chain of management.
-    Lastly, this document provides a high-level overview of SIT-Com scope, products and processes and acts as a structured starting point for understanding SIT-Com and provides pointers to Project system level documentation.
+The Management Plan covered by this document describes the organization and management strategy of the Systems Integration, Test and Commissioning team (here after SIT-Com) through the end stages of development, construction, and commissioning of the Rubin Observatory.  
+The SIT-Com team is composed of a core group of people from the Rubin Construction Project working nearly full time on SIT-Com activities as well as numerous others contributing from across all of the Project subsystems and the scientific user community - both domestic and foreign.  
+This document describes the composition of the distributed SIT-Com team and the management strategy of the team who are undertaking tasks with wide ranging disciplines.  It also lays out the management organization, leadership structure, and the team members' roles and responsibilities.   
+This document also describes the team's regular interactions, and details the workflow of how information and tasks are communicated up and down the chain of the broader Project structure and management.
+This document does not supplant the Systems Engineering Management Plan (SEMP \citeds{LSE-17}) and is meant to augment the SEMP with the wider scope of the SIT-Com effort.
+Lastly, this document provides a high-level overview of SIT-Com scope, products and processes and acts as a structured starting point for understanding SIT-Com and provides pointers to Project system level documentation.
 }
 
 % Revision history.
@@ -70,6 +70,8 @@ The Management Plan covered in this document includes the organization and manag
     \end{enumerate}
 
 \textbf{SIT-Com Mission Statement}
+\label{sec:Mission}
+
 Deliver a fully integrated, tested, characterized and documented Rubin Observatory system that meets its scientific, technical, and functional requirements with well defined operational procedures and processes within Project schedule and budget constraints.
 
 \textbf{Document Scope and Purpose}
@@ -100,55 +102,59 @@ Acronyms and Definitions Specific to this Document:
 \section{Project Organization in System AI\&T and Commissioning}
 \label{sec:project_organization}
 
-During system assembly, integration and test (AI\&T) and commissioning, the overall Project organizational structure remains unchanged.
+During system assembly, integration and test (AI\&T) and commissioning, the overall Project WBS organizational structure remains unchanged.
 The Project Director, Deputy Director and Project Manager retain overall responsibility and authority as described in the Project Execution Plan (PEP) (\citeds{LPM-54}).
-The System Assembly, Integration, Test and Commissioning (SIT-Com) team has been formed and is led by the Systems Scientist.
-The high-level description of this position is to plan and execute the observatory commissioning effort, ensuring an on-time and on-budget delivery.
-The Systems Scientist has the authority to direct resources as required to meet the functional objectives described in this plan and are ultimately responsible for all aspects of SIT-Com.
+However, as the Project enters into its final stages some functional change is required, therefore the System Assembly, Integration, Test and Commissioning (SIT-Com) team has been formed and is led by the Systems Scientist.
+The high-level description of this team is to plan, execute and lead the observatory commissioning effort, ensuring an on-time and on-budget delivery meeting the \href{https://sitcomtn-005.lsst.io}{Construction Completeness Criteria }.
+The Systems Scientist has the authority to direct resources as required to meet the functional objectives described in this plan and is ultimately responsible for all aspects of SIT-Com.
 
-The SIT-Com framework, which was created relatively recently in comparison to the other subsystems in the project, has grown out of and now encompasses the System's Engineering (SE) group.
-Consequently, SIT-Com is now responsible for the verification, validation, and science verification activities, however they remain under the auspices of the SE group.
-The SE team management plan (\citeds{LSE-17}) details the internal workings of that group and details the responsibilities and adopted methodologies, including verification procedures and tooling.
+The SIT-Com team framework has grown out of and now encompasses both Project System's Engineering (PSE) and Commissioning.
+With the integration of Commissioning and Systems Engineering groups, SIT-Com is now responsible for the verification, validation, commissioning and science validation activities.
+The PSE team management plan (\citeds{LSE-17}) details the internal workings of that group and details the responsibilities and adopted methodologies, including verification procedures and tooling.
 More DOE specific content is found in the Commissioning Execution Plan (\citeds{LSE-390}).
+The purpose of the document herein is to describe the details, roles and responsibilities of the overall SIT-Com team.
 
-The majority of the SIT-Com team is composed of DOE and NSF funded employees, many of whom transition from the construction project.
-This strategy ensures the roots of SIT-Com reach deep into the individual subsystems and enable simultaneous coordination and planning of construction and SIT-Com activities, specifically regarding characterization and verification exercises.
+The majority of the SIT-Com team is composed of both MREFC (NSF) and DOE funded personnel.
+Many of the SIT-Com team come from the individual WBS defined subsystems to ensure the roots of SIT-Com reach deep into the individual technical areas of each subsystem. 
+The inheritance of personnel from the subsystems also allows SIT-Com to simultaneously coordinate and plan of the final stages of construction and interconnected SIT-Com activities, specifically regarding characterization, verification and validation exercises.
+
 To help facilitate the cross-subsystem challenges and specifics related to each funding agency, the senior leadership of the SIT-Com group consists of both NSF and DOE funded personnel.
-Because many of the SIT-Com personnel are also part of the construction team, the transition and/or time sharing must be actively managed.
+Because majority of the SIT-Com team are also part of construction subsystem teams, the transition and/or time sharing must be actively managed.
 During the transition, the administrative (line) managers do not change, and a functional manager from the SIT-Com team is added.
 These interactions are discussed in further detail in section \ref{sec:interactions}.
-Resources to SIT-Com are not restricted to only NSF and DOE funded personnel; outside funding agencies to SIT-Com are also being considered via In-Kind Contributions.
+Resources to SIT-Com are not restricted to only NSF and DOE funded personnel; outside in--kind contributions to SIT-Com are also being evaluated and will provide value added effort.
 
- In-Kind contributions are a mechanism to exchange Rubin data rights for effort towards a specific aspect or project that is managed under the SIT-Com group.
-After a proposal and selection process, the contributors become SIT-Com team members and are included in all open SIT-Com activities.
+The Project has developed a mechanism for in--kind contributions to enable external expertise to add value to the broader SIT-Com effort.
+This in--kind contribution comes from two distinct sources -- foreign contributors to offset previous commitments to operations and US and Chilean as active partners in the Rubin science.
+The Project has conduct a proposal and review process for in--kind contributors who will be managed as part of the integrated SIT-Com team.
+In return in--kind contributors will gain real--time access to commissioning data as we conduct our activities.
 This is discussed in detail in section \ref{sec:in_kind}.
-From a functional standpoint, all SIT-Com personnel act as a unified team regardless of home institution, funding source, previously associated subsystem etc.
+From a functional standpoint, all SIT-Com personnel act as a unified team regardless of ''home affiliation'' -- be it Project WBS or other supporting institutions.
 On a day-to-day basis, the majority of the communication is between SIT-Com team members themselves, or with other subsystems, rather than via an advisor-to-employee mechanism.
 
-The SIT-Com group attends the normal cross-subsystem meetings as were previously attended by the SE group, but with an continually increasing level of interaction.
-With the project now into the commissioning phase, the SIT-Com team has expanded its presence and now coordinates activities for both SIT-Com and other subsystems, particularly on the summit.
-With the expansion of the SIT-Com team, combined with being highly distributed across numerous subsystems, the structure is now adapting and evolving to meet the project's needs.
+As part of the SIT-Com mandate the group attends the subsystem and cross-subsystem meetings to represent issues and concerns as they are related to the whole integrated Rubin Observatory System.
+With the project now into the system integration and commissioning phase, the SIT-Com team has expanded its presence and now coordinates activities for both SIT-Com and other subsystems, particularly on the summit.
+With the expansion of the SIT-Com team, combined with being highly distributed across numerous subsystems, the revised team structure is now adapting and evolving to meet the Project's needs.
 
-The SIT-Com team has approached its structuring with a more integrated team approach in mind and intentionally deviates from a format following the T\&S, DM, and Camera subsystems.
+The SIT-Com team is structured to be an integrated intentionally deviating from a format WBS structure of the T\&S, DM, and Camera subsystems.
 When the components come together and the focus moves to the characterization of an integrated system, a more global and encompassing view is required.
 The organization of the SIT-Com team, discussed in section \ref{sec:comp_and_org}, delivers this view while simultaneously providing the mechanisms to communicate across subsystem boundaries (section \ref{sec:interactions}).
 
 \section{In-Kind Contributions}
 \label{sec:in_kind}
 
-Through both US-Chilean institutions and from foreign contributors, the Project will receive in-kind contributions to support the SIT-Com effort to delive an integrated and well-characterized Rubin Observatory.
-These in-kind contributions do not supplant the responsibility of SIT-Com but are to add value and extend commissioning efforts for the benefit of the scientific community.
-The contributions themselves are expected to come in various forms and at different levels of support.
-It is expected that contributions to SIT-Com will come primarily in the form of off-site analysis of engineering, imaging, and catalog-based science data.
-SIT-Com will also consider direct on-site (i.e. Chile) participation from well-qualified personnel.
-A call-for-proposals has been circulated to the scientific community where teams are expected to put forward specific projects where they can contribute in exchange for data rights.
-These proposals will then undergo a review process by the SIT-Com Leadership.
-If accepted, these projects will be conducted under the direction of the SIT-Com Leadership team.
+Through both US-Chilean institutions and from foreign contributors, the Project has received proposals for in-kind contributions to support the SIT-Com effort to provide value added effort in support of delivering an integrated and well-characterized Rubin Observatory.
+These in-kind contributions do not supplant the obligations of the MREFC (NSF) and DOE funded Rubin Observatory construction project, but are meant to add value and extend commissioning efforts for the benefit of the scientific community.
+The contributions themselves have come in various forms and with varying levels of support.
+It is expected that in--kind contributions to SIT-Com will come primarily in the form of off-site analysis of engineering, imaging, and catalog-based science data.
+SIT-Com has also accepted some direct on-site (i.e. Chile) participation by well-qualified personnel.
+Calls-for-proposals have been circulated to the scientific community where teams have put forward specific projects where they can contribute.
+These proposals have undergone a review process by the SIT-Com Leadership.
 
-As the contractual component of the contributions are often handled by parties not directly working on the deliverables, the contractual aspects are deliberately separated from the technical prioritization.
-This is meant to minimize the overhead of contract management on the people with the needed technical expertise.
-Furthermore, the deliverables from the in-kind contributions will be as crisply defined as possible designed to minimize the dependency and impacts to project personnel.
-For example, deliverables will be in the form of tech notes, reports and/or software packages as opposed to presentations.
+To manage the in--kind contribution the Project has put a requirement on accepted teas to have a single point of contact, essential a Principle Investigator lead for the in--kind team.
+SIT-Com also requires that in--kind work products are full documented using the Project documentation systems -- specifically analysis shall be recorded as a \href{https://www.lsst.io/sitcomtn/?}{SIT-Com Tech Note}.
+Software developed by in--kind contributors shall follow Rubin Observatory project standards and adhere to the Project's open source policy.
+Furthermore, each in-kind contributor is expected to conduct as directed by the SIT-Com team with deliverables crisply defined and designed to minimize the dependency and impacts to project personnel.
 The management of the In-Kind contributions and the interactions with the SIT-Com team is discussed further in sections \ref{sec:SCLT} and \ref{sec:interactions}.
 
 \section{SIT-Com Composition and Organization}
@@ -157,7 +163,7 @@ The management of the In-Kind contributions and the interactions with the SIT-Co
 The most critical component in the successful commissioning of the Rubin Observatory is the people.
 To perform this job thoroughly and effectively requires personnel from numerous disciplines and vast ranges in experience.
 The SIT-Com team includes numerous senior personnel with experience in other analogous surveys as well as junior members offering new viewpoints on classical problems and unrelenting enthusiasm.
-Moreoever, the team is well populated with personnel that transition from the other subsystems once their component is nearing substantial completion.
+Moreover, the team is well populated with personnel that transition from the other subsystems once their component is nearing substantial completion.
 This is important in ensuring continuity and the long-term retention of knowledge.
 Each subsystem has assigned staff to be directly involved in the System AI\&T and Commissioning effort.
 
